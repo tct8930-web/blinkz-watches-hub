@@ -40,21 +40,62 @@
             background: white;
             border-radius: 10px;
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .content h2 {
             text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+
+        textarea {
+            height: 120px;
+            resize: vertical;
         }
 
         .button {
             display: inline-block;
-            margin: 10px;
             padding: 12px 20px;
             background: #111;
             color: white;
             text-decoration: none;
+            border: none;
             border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
         }
 
         .button:hover {
-            background: #333;
+            background: #555;
+        }
+
+        .contact-buttons {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-buttons a {
+            display: inline-block;
+            margin: 8px;
         }
 
         footer {
@@ -102,30 +143,110 @@
 
 <div class="content">
 
-    <h2>Get In Touch</h2>
+    <h2>Place an Order</h2>
 
-    <p>
-        Have a question about a watch or want to place an order?
-        Contact us directly.
+    <p style="text-align:center;">
+        Fill in your details and tell us which watch you want.
     </p>
 
-    <a href="https://wa.me/2347066159449" class="button">
-        Chat on WhatsApp
-    </a>
+    <form action="https://formsubmit.co/idris08675@gmail.com" method="POST">
 
-    <a href="https://www.tiktok.com/@blinkz_watches_hub" class="button">
-        Visit TikTok
-    </a>
+        <div class="form-group">
 
-    <a href="http://instagram.com/blinkzcontact" class="button">
-        Visit Instagram
-    </a>
+            <label for="name">Your Name</label>
+
+            <input type="text"
+                   id="name"
+                   name="name"
+                   placeholder="Enter your name"
+                   required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="phone">Phone Number</label>
+
+            <input type="tel"
+                   id="phone"
+                   name="phone"
+                   placeholder="Enter your phone number"
+                   required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="watch">Choose a Watch</label>
+
+            <select id="watch" name="watch" required>
+
+                <option value="">Select a watch</option>
+
+                <option value="G-Shock - ₦50,000">
+                    G-Shock - ₦50,000
+                </option>
+
+                <option value="TISSOT RUBBER STRAP - ₦80,000">
+                    TISSOT RUBBER STRAP - ₦80,000
+                </option>
+
+                <option value="Cartier - ₦150,000">
+                    Cartier - ₦150,000
+                </option>
+
+                <option value="FRANCK MULLEN - ₦300,000">
+                    FRANCK MULLEN - ₦300,000
+                </option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="message">Message</label>
+
+            <textarea id="message"
+                      name="message"
+                      placeholder="Write your message here..."
+                      required></textarea>
+
+        </div>
+
+        <div style="text-align:center;">
+
+            <button type="submit" class="button">
+                Send Order Request
+            </button>
+
+        </div>
+
+    </form>
+
+    <div class="contact-buttons">
+
+        <a href="https://wa.me/2347066159449" class="button">
+            Chat on WhatsApp
+        </a>
+
+        <a href="https://www.tiktok.com/@blinkz_watches_hub" class="button">
+            TikTok
+        </a>
+
+        <a href="http://instagram.com/blinkzcontact" class="button">
+            Instagram
+        </a>
+
+    </div>
 
 </div>
 
 <footer>
 
-    <p>©️ 2026 Blinkz Watches Hub. All rights reserved.</p>
+    <p>
+        ©️ 2026 Blinkz Watches Hub. All rights reserved.
+    </p>
 
 </footer>
 
