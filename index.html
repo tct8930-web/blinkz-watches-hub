@@ -13,27 +13,53 @@
         }
 
         header {
-            background: #111;
+            background: linear-gradient(135deg, #111, #333);
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 50px 20px;
         }
 
         .logo {
-            width: 120px;
-            height: 120px;
+            width: 140px;
+            height: 140px;
             object-fit: contain;
             border-radius: 50%;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            border: 3px solid white;
         }
 
         header h1 {
-            font-size: 36px;
-            margin: 0;
+            font-size: 40px;
+            margin: 0 0 10px;
         }
 
         header p {
-            font-size: 18px;
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .header-buttons {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 8px;
+            padding: 13px 22px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            opacity: 0.8;
+        }
+
+        .light-button {
+            background: white;
+            color: #111;
         }
 
         nav {
@@ -54,15 +80,20 @@
         }
 
         section {
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
+        }
+
+        section h2 {
+            font-size: 30px;
+            margin-bottom: 15px;
         }
 
         .products {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            gap: 20px;
+            gap: 25px;
             margin-top: 30px;
         }
 
@@ -70,8 +101,8 @@
             background: white;
             padding: 20px;
             width: 250px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .product img {
@@ -90,34 +121,40 @@
         }
 
         .price {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: bold;
         }
 
-        .button {
-            display: inline-block;
-            margin-top: 15px;
-            padding: 12px 20px;
-            background: #111;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
+        .about-text {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.7;
         }
 
-        .button:hover {
-            opacity: 0.8;
+        .info-box {
+            max-width: 700px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         }
 
         footer {
             background: #111;
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 25px;
         }
 
         @media (max-width: 600px) {
+
+            header {
+                padding: 40px 15px;
+            }
+
             header h1 {
-                font-size: 28px;
+                font-size: 30px;
             }
 
             header p {
@@ -143,14 +180,35 @@
 <body>
 
     <header>
-        <img src="IMG_2358.jpeg" alt="Blinkz Watches Hub Logo" class="logo">
+
+        <img src="IMG_2358.jpeg"
+             alt="Blinkz Watches Hub Logo"
+             class="logo">
 
         <h1>Blinkz Watches Hub</h1>
 
-        <p>Quality watches for every style.</p>
+        <p>
+            Stylish watches for every style, occasion and personality.
+        </p>
+
+        <div class="header-buttons">
+
+            <a href="#watches" class="button light-button">
+                Shop Watches
+            </a>
+
+            <a href="https://wa.me/2347066159449"
+               class="button">
+                Chat on WhatsApp
+            </a>
+
+        </div>
+
     </header>
 
+
     <nav>
+
         <a href="#home">Home</a>
         <a href="#watches">Watches</a>
         <a href="#about">About Us</a>
@@ -158,32 +216,44 @@
         <a href="#delivery">Delivery</a>
         <a href="#how-to-order">How to Order</a>
         <a href="#contact">Contact</a>
+
     </nav>
 
+
     <section id="home">
-        <h2>Welcome to Blinkz Watches Hub</h2>
+
+        <h2>Find a Watch You’ll Love</h2>
 
         <p>
-            Shop stylish and quality watches for everyday wear,
-            special occasions, and gifts.
+            Explore our collection of stylish watches for everyday wear,
+            special occasions and gifts.
         </p>
 
         <p>
-            Choose your favorite watch and order directly through WhatsApp.
+            Choose your favorite watch and contact us directly on WhatsApp
+            to place your order.
         </p>
 
         <a href="#watches" class="button">
-            Shop Our Watches
+            View Our Watches
         </a>
+
     </section>
 
+
     <section id="watches">
+
         <h2>Our Watches</h2>
+
+        <p>Browse our available watches and choose your favorite.</p>
 
         <div class="products">
 
+
             <div class="product">
-                <img src="IMG_2339.jpeg" alt="G-Shock watch">
+
+                <img src="IMG_2339.jpeg"
+                     alt="G-Shock watch">
 
                 <h3>G-Shock</h3>
 
@@ -193,13 +263,18 @@
 
                 <p class="price">₦50,000</p>
 
-                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20G-Shock%20for%20%E2%82%A650%2C000." class="button">
+                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20G-Shock%20for%20%E2%82%A650%2C000."
+                   class="button">
                     Order on WhatsApp
                 </a>
+
             </div>
 
+
             <div class="product">
-                <img src="IMG_2341.jpeg" alt="TISSOT RUBBER STRAP watch">
+
+                <img src="IMG_2341.jpeg"
+                     alt="TISSOT RUBBER STRAP watch">
 
                 <h3>TISSOT RUBBER STRAP</h3>
 
@@ -209,142 +284,220 @@
 
                 <p class="price">₦80,000</p>
 
-                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20TISSOT%20RUBBER%20STRAP%20for%20%E2%82%A680%2C000." class="button">
+                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20TISSOT%20RUBBER%20STRAP%20for%20%E2%82%A680%2C000."
+                   class="button">
                     Order on WhatsApp
                 </a>
+
             </div>
 
+
             <div class="product">
-                <img src="IMG_2342.jpeg" alt="Cadier watch">
+
+                <img src="IMG_2342.jpeg"
+                     alt="Cadier watch">
 
                 <h3>Cadier</h3>
 
                 <p>
-                    Elegant design suitable for special occasions and everyday style.
+                    Elegant design suitable for special occasions
+                    and everyday style.
                 </p>
 
                 <p class="price">₦150,000</p>
 
-                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20Cadier%20for%20%E2%82%A6150%2C000." class="button">
+                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20Cadier%20for%20%E2%82%A6150%2C000."
+                   class="button">
                     Order on WhatsApp
                 </a>
+
             </div>
 
+
             <div class="product">
-                <img src="IMG_2343.jpeg" alt="FRANCK MULLEN watch">
+
+                <img src="IMG_2343.jpeg"
+                     alt="FRANCK MULLEN watch">
 
                 <h3>FRANCK MULLEN</h3>
 
                 <p>
-                    A premium-looking watch for a bold and stylish appearance.
+                    A premium-looking watch for a bold and stylish
+                    appearance.
                 </p>
 
                 <p class="price">₦300,000</p>
 
-                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20FRANCK%20MULLEN%20for%20%E2%82%A6300%2C000." class="button">
+                <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20FRANCK%20MULLEN%20for%20%E2%82%A6300%2C000."
+                   class="button">
                     Order on WhatsApp
                 </a>
+
             </div>
 
         </div>
+
     </section>
+
 
     <section id="about">
+
         <h2>About Blinkz Watches Hub</h2>
 
-        <p>
-            Welcome to Blinkz Watches Hub. We provide stylish watches
-            for people who want quality, elegance, and a great look.
-        </p>
+        <div class="about-text">
 
-        <p>
-            Our goal is to make it easy for customers to discover watches
-            they love and order directly through WhatsApp.
-        </p>
+            <p>
+                Welcome to Blinkz Watches Hub. We provide stylish watches
+                for people who want quality, elegance and a great look.
+            </p>
 
-        <p>
-            We are committed to giving our customers clear prices,
-            friendly service, and a smooth ordering experience.
-        </p>
+            <p>
+                Our goal is to make it easy for customers to discover
+                watches they love and order directly through WhatsApp.
+            </p>
+
+            <p>
+                We are committed to giving our customers clear prices,
+                friendly service and a smooth ordering experience.
+            </p>
+
+        </div>
+
     </section>
+
 
     <section id="why-us">
+
         <h2>Why Shop With Us?</h2>
 
-        <p>⌚ Stylish watches for different occasions.</p>
-        <p>💰 Prices clearly displayed before you order.</p>
-        <p>📱 Easy ordering through WhatsApp.</p>
-        <p>🚚 Delivery available to customers.</p>
+        <div class="info-box">
+
+            <p>⌚ Stylish watches for different occasions.</p>
+
+            <p>💰 Prices clearly displayed before you order.</p>
+
+            <p>📱 Easy ordering through WhatsApp.</p>
+
+            <p>🚚 Delivery available to customers.</p>
+
+        </div>
+
     </section>
+
 
     <section id="delivery">
+
         <h2>Delivery</h2>
 
-        <p>🚚 Delivery is available to customers.</p>
+        <div class="info-box">
 
-        <p>📦 Delivery details will be confirmed when you place your order.</p>
+            <p>🚚 Delivery is available to customers.</p>
+
+            <p>
+                📦 Delivery details will be confirmed
+                when you place your order.
+            </p>
+
+        </div>
+
     </section>
+
 
     <section id="how-to-order">
+
         <h2>How to Order</h2>
 
-        <p>1️⃣ Choose the watch you want.</p>
+        <div class="info-box">
 
-        <p>2️⃣ Click the "Order on WhatsApp" button.</p>
+            <p>1️⃣ Choose the watch you want.</p>
 
-        <p>3️⃣ Send us your order details.</p>
+            <p>2️⃣ Click the "Order on WhatsApp" button.</p>
 
-        <p>4️⃣ We will confirm the price and delivery details with you.</p>
+            <p>3️⃣ Send us your order details.</p>
 
-        <p>5️⃣ Complete your payment after your order is confirmed.</p>
+            <p>
+                4️⃣ We will confirm the price and delivery details
+                with you.
+            </p>
 
-        <p>6️⃣ Your watch will be prepared for delivery.</p>
+            <p>
+                5️⃣ Complete your payment after your order
+                is confirmed.
+            </p>
 
-        <a href="https://wa.me/2347066159449" class="button">
-            Start Your Order on WhatsApp
-        </a>
+            <p>
+                6️⃣ Your watch will be prepared for delivery.
+            </p>
+
+            <a href="https://wa.me/2347066159449"
+               class="button">
+                Start Your Order
+            </a>
+
+        </div>
+
     </section>
+
 
     <section id="trust">
+
         <h2>Why Choose Blinkz Watches Hub?</h2>
 
-        <p>⌚ Stylish watches for different tastes and occasions.</p>
+        <div class="info-box">
 
-        <p>💰 Clear prices before you order.</p>
+            <p>⌚ Stylish watches for different tastes and occasions.</p>
 
-        <p>📱 Easy ordering through WhatsApp.</p>
+            <p>💰 Clear prices before you order.</p>
 
-        <p>🚚 Delivery available to customers.</p>
+            <p>📱 Easy ordering through WhatsApp.</p>
 
-        <p>🤝 Friendly customer service.</p>
+            <p>🚚 Delivery available to customers.</p>
 
-        <p>📦 Your order is confirmed through WhatsApp.</p>
+            <p>🤝 Friendly customer service.</p>
+
+            <p>📦 Your order is confirmed through WhatsApp.</p>
+
+        </div>
+
     </section>
 
+
     <section id="contact">
+
         <h2>Contact Us</h2>
 
-        <p>Want to order a watch? Chat with us on WhatsApp.</p>
+        <p>
+            Want to order a watch? Chat with us on WhatsApp.
+        </p>
 
-        <a href="https://wa.me/2347066159449" class="button">
+        <a href="https://wa.me/2347066159449"
+           class="button">
             Chat With Us on WhatsApp
         </a>
 
         <br><br>
 
-        <a href="https://www.tiktok.com/@blinkz_watches_hub" class="button">
+        <a href="https://www.tiktok.com/@blinkz_watches_hub"
+           class="button">
             Follow Us on TikTok
         </a>
 
         <br><br>
 
-        <a href="http://instagram.com/blinkzcontact" class="button">
+        <a href="http://instagram.com/blinkzcontact"
+           class="button">
             Follow Us on Instagram
         </a>
+
     </section>
 
+
     <footer>
-        <p>© 2026 Blinkz Watches Hub. All rights reserved.</p>
+
+        <p>
+            © 2026 Blinkz Watches Hub. All rights reserved.
+        </p>
+
     </footer>
 
 </body>
