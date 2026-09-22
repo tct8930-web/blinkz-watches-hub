@@ -40,15 +40,19 @@
             box-shadow: 0 8px 20px rgba(0,0,0,0.12);
         }
 
+        /* Smaller product pictures */
+
         .shop-product img {
             width: 100%;
-            height: 280px;
+            height: 220px;
             object-fit: contain;
             border-radius: 8px;
+            padding: 10px;
         }
 
         .shop-product h2 {
             margin-top: 15px;
+            font-size: 20px;
         }
 
         .shop-price {
@@ -71,10 +75,26 @@
             background: #555;
         }
 
+        /* Phone screen */
+
         @media (max-width: 700px) {
 
             .shop-products {
                 grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .shop-product {
+                padding: 15px;
+            }
+
+            .shop-product img {
+                height: 200px;
+                padding: 8px;
+            }
+
+            .shop-product h2 {
+                font-size: 19px;
             }
 
         }
@@ -631,7 +651,7 @@
 <footer>
 
     <p>
-        © 2026 Blinkz Watches Hub. All rights reserved.
+        ©️ 2026 Blinkz Watches Hub. All rights reserved.
     </p>
 
 </footer>
