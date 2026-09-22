@@ -1,108 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Shop Watches - Blinkz Watches Hub</title>
 
+    <link rel="stylesheet" href="style.css">
+
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-            color: #222;
-        }
 
-        header {
-            background: linear-gradient(135deg, #111, #333);
-            color: white;
-            text-align: center;
-            padding: 35px 20px;
-        }
-
-        header h1 {
-            margin: 10px 0;
-        }
-
-        nav {
-            background: white;
-            text-align: center;
-            padding: 15px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        nav a {
-            color: #111;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-
-        .container {
-            max-width: 1000px;
+        .shop-container {
+            max-width: 1100px;
             margin: 30px auto;
             padding: 20px;
         }
 
-        .products {
+        .shop-products {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
+            gap: 25px;
         }
 
-        .product {
+        .shop-product {
             background: white;
             border: 1px solid #ddd;
             padding: 20px;
-            border-radius: 10px;
+            border-radius: 12px;
             text-align: center;
             box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: 0.2s;
         }
 
-        .product img {
+        .shop-product:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+        }
+
+        .shop-product img {
             width: 100%;
-            max-width: 250px;
-            height: 250px;
+            height: 280px;
             object-fit: contain;
             border-radius: 8px;
         }
 
-        .product h2 {
+        .shop-product h2 {
             margin-top: 15px;
         }
 
-        .price {
+        .shop-price {
             font-size: 20px;
             font-weight: bold;
+            margin: 15px 0;
         }
 
-        .button {
+        .shop-button {
             display: inline-block;
             padding: 12px 20px;
-            margin-top: 10px;
             background: #111;
             color: white;
             text-decoration: none;
             border-radius: 6px;
+            margin-top: 8px;
         }
 
-        .button:hover {
+        .shop-button:hover {
             background: #555;
         }
 
-        footer {
-            background: #111;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-
         @media (max-width: 700px) {
-            .products {
+
+            .shop-products {
                 grid-template-columns: 1fr;
             }
+
         }
+
     </style>
+
 </head>
 
 <body>
@@ -115,40 +93,44 @@
 
 </header>
 
+
 <nav>
 
     <a href="index.html">Home</a>
 
     <a href="shop.html">Shop Watches</a>
 
+    <a href="about.html">About Us</a>
+
+    <a href="contact.html">Contact Us</a>
+
 </nav>
 
-<div class="container">
+
+<div class="shop-container">
 
     <h2 style="text-align:center;">
         Our Watch Collection
     </h2>
 
-    <div class="products">
+
+    <div class="shop-products">
 
 
-        <div class="product">
+        <!-- WATCH 1 -->
 
-            <img src="IMG_2339.jpeg"
-                 alt="G-Shock watch">
+        <div class="shop-product">
+
+            <img src="IMG_2339.jpeg" alt="G-Shock watch">
 
             <h2>G-Shock</h2>
 
-            <p>
-                Stylish and durable watch for everyday wear.
-            </p>
+            <p>Stylish and durable watch for everyday wear.</p>
 
-            <p class="price">
-                ₦50,000
-            </p>
+            <p class="shop-price">₦50,000</p>
 
             <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20G-Shock%20for%20%E2%82%A650%2C000."
-               class="button">
+               class="shop-button">
 
                 Order on WhatsApp
 
@@ -157,23 +139,20 @@
         </div>
 
 
-        <div class="product">
+        <!-- WATCH 2 -->
 
-            <img src="IMG_2341.jpeg"
-                 alt="TISSOT RUBBER STRAP watch">
+        <div class="shop-product">
+
+            <img src="IMG_2341.jpeg" alt="TISSOT RUBBER STRAP watch">
 
             <h2>TISSOT RUBBER STRAP</h2>
 
-            <p>
-                A stylish rubber strap watch for a modern look.
-            </p>
+            <p>A stylish rubber strap watch for a modern look.</p>
 
-            <p class="price">
-                ₦80,000
-            </p>
+            <p class="shop-price">₦80,000</p>
 
             <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20TISSOT%20RUBBER%20STRAP%20for%20%E2%82%A680%2C000."
-               class="button">
+               class="shop-button">
 
                 Order on WhatsApp
 
@@ -182,24 +161,20 @@
         </div>
 
 
-        <div class="product">
+        <!-- WATCH 3 -->
 
-            <img src="IMG_2342.jpeg"
-                 alt="Cartier watch">
+        <div class="shop-product">
+
+            <img src="IMG_2342.jpeg" alt="Cartier watch">
 
             <h2>Cartier</h2>
 
-            <p>
-                Elegant design suitable for special occasions
-                and everyday style.
-            </p>
+            <p>Elegant design suitable for special occasions and everyday style.</p>
 
-            <p class="price">
-                ₦150,000
-            </p>
+            <p class="shop-price">₦150,000</p>
 
             <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20Cartier%20for%20%E2%82%A6150%2C000."
-               class="button">
+               class="shop-button">
 
                 Order on WhatsApp
 
@@ -208,38 +183,455 @@
         </div>
 
 
-        <div class="product">
+        <!-- WATCH 4 -->
 
-            <img src="IMG_2343.jpeg"
-                 alt="FRANCK MULLEN watch">
+        <div class="shop-product">
+
+            <img src="IMG_2343.jpeg" alt="FRANCK MULLEN watch">
 
             <h2>FRANCK MULLEN</h2>
 
-            <p>
-                A premium-looking watch for a bold and stylish appearance.
-            </p>
+            <p>A premium-looking watch for a bold and stylish appearance.</p>
 
-            <p class="price">
-                ₦300,000
-            </p>
+            <p class="shop-price">₦300,000</p>
 
             <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20the%20FRANCK%20MULLEN%20for%20%E2%82%A6300%2C000."
-               class="button">
+               class="shop-button">
 
                 Order on WhatsApp
 
             </a>
 
         </div>
+
+
+        <!-- WATCH 5 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2344.jpeg" alt="Watch 5">
+
+            <h2>Watch 5</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%205."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 6 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2345.jpeg" alt="Watch 6">
+
+            <h2>Watch 6</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%206."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 7 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2346.jpeg" alt="Watch 7">
+
+            <h2>Watch 7</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%207."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 8 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2347.jpeg" alt="Watch 8">
+
+            <h2>Watch 8</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%208."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 9 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2348.jpeg" alt="Watch 9">
+
+            <h2>Watch 9</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%209."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 10 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2349.jpeg" alt="Watch 10">
+
+            <h2>Watch 10</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2010."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 11 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2350.jpeg" alt="Watch 11">
+
+            <h2>Watch 11</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2011."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 12 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2351.jpeg" alt="Watch 12">
+
+            <h2>Watch 12</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2012."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 13 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2352.jpeg" alt="Watch 13">
+
+            <h2>Watch 13</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2013."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 14 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2353.jpeg" alt="Watch 14">
+
+            <h2>Watch 14</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2014."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 15 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2354.jpeg" alt="Watch 15">
+
+            <h2>Watch 15</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2015."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 16 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2355.jpeg" alt="Watch 16">
+
+            <h2>Watch 16</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2016."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 17 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2356.jpeg" alt="Watch 17">
+
+            <h2>Watch 17</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2017."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 18 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2357.jpeg" alt="Watch 18">
+
+            <h2>Watch 18</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2018."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 19 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2359.jpeg" alt="Watch 19">
+
+            <h2>Watch 19</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2019."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 20 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2360.jpeg" alt="Watch 20">
+
+            <h2>Watch 20</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2020."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 21 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2361.jpeg" alt="Watch 21">
+
+            <h2>Watch 21</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2021."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 22 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2362.jpeg" alt="Watch 22">
+
+            <h2>Watch 22</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2022."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
+
+        <!-- WATCH 23 -->
+
+        <div class="shop-product">
+
+            <img src="IMG_2363.jpeg" alt="Watch 23">
+
+            <h2>Watch 23</h2>
+
+            <p>Stylish watch from our collection.</p>
+
+            <p class="shop-price">Contact for Price</p>
+
+            <a href="https://wa.me/2347066159449?text=Hello%2C%20I%20want%20to%20order%20Watch%2023."
+               class="shop-button">
+
+                Order on WhatsApp
+
+            </a>
+
+        </div>
+
 
     </div>
 
 </div>
 
+
 <footer>
 
     <p>
-        ©️ 2026 Blinkz Watches Hub. All rights reserved.
+        © 2026 Blinkz Watches Hub. All rights reserved.
     </p>
 
 </footer>
