@@ -87,11 +87,11 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
         }
 
-        /* SMALL WATCH IMAGES */
+        /* FEATURED WATCH IMAGE */
 
         .featured-card img {
-            width: 60%;
-            height: 160px;
+            width: 85%;
+            height: 250px;
             object-fit: contain;
             display: block;
             margin: 0 auto;
@@ -158,7 +158,7 @@
             color: #ddd;
         }
 
-        /* MOBILE */
+        /* TABLET */
 
         @media (max-width: 900px) {
 
@@ -171,6 +171,8 @@
             }
 
         }
+
+        /* PHONE */
 
         @media (max-width: 600px) {
 
@@ -195,14 +197,22 @@
                 grid-template-columns: 1fr;
             }
 
-            /* SMALLER WATCH ON PHONE */
+            /* BIGGER WATCH IMAGE ON PHONE */
 
             .featured-card img {
-                width: 55%;
-                height: 145px;
+                width: 85%;
+                height: 250px;
                 object-fit: contain;
                 display: block;
                 margin: 0 auto;
+            }
+
+            .featured-card h3 {
+                font-size: 23px;
+            }
+
+            .featured-price {
+                font-size: 21px;
             }
 
             .benefits {
